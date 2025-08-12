@@ -20,7 +20,7 @@ num findAngleDeviation(num innerRadius, num outerRadius, num totalAngle) {
   final num circumference = 2 * pi * midRadius;
   final num rimSize = (innerRadius - outerRadius).abs();
   final num deviation = ((rimSize / 2) / circumference) * 100;
-  return (deviation * 360) / 100;
+  return (deviation * 180) / 100;
 }
 
 /// Calculate arc path for circular series segment.
